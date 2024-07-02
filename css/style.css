@@ -1,0 +1,93 @@
+
+/* palet */
+:root {
+    --sh-hf-bg: #2c3e50;
+    --sh-main-bg1: #3a606d;
+    --sh-main-bg2: #1a96bc;
+    --sh-white: #ffffff;
+    --sh-black: #04578b;
+}
+/* header*/
+header nav.navbar, 
+#privacy {
+    background-color: var(--sh-hf-bg);
+}
+
+#jumbotron,
+#about {
+    background-color: var(--sh-main-bg2);
+}
+
+#jumbotron .sh-content-image img {
+    max-width: 40%;
+}
+
+/* main*/
+#portfolio, 
+#contact {
+    color: var(--sh-black);
+}
+
+#social {
+    background-color: var(--sh-main-bg1);
+}
+
+li {
+    list-style-type: none;
+}
+
+span.sh-color-green {
+    color: var(--sh-main-bg2);
+}
+
+#contact .btn-primary {
+    background-color: var(--sh-main-bg2);
+}
+
+#about [type="button"] > i {
+    margin-right: .25rem;
+}
+
+/* footer*/
+.sh-text-privacy {
+    font-size: .75rem
+}
+
+a.sh-component-social {
+    all: unset;
+    display: inline-block;
+    width: 3.25rem;
+    height: 3.25rem;
+    border: 1px solid currentColor;
+    line-height: 3.25rem;
+}
+
+.sh-component-image img{
+    width: 100%;
+    display: block;
+}
+
+.sh-component-image {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sh-component-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sh-component-icon::after,
+.sh-component-icon::before {
+  content:'';
+  width: 15%;
+  height: .25rem;
+  border-radius: 4px;
+  background-color: currentColor;
+}
+
+.sh-component-icon i {
+    margin: .625rem;
+    font-size: 2.125rem;
+}
